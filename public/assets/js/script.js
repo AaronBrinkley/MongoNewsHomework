@@ -75,7 +75,7 @@ $(document).ready(function() {
 
 
              
-$(".Note-Form").on("submit", function(event) {
+    $(".Note-Form").on("submit", function(event) {
      event.preventDefault();
     console.log("button works")
     
@@ -110,12 +110,6 @@ $(".Note-Form").on("submit", function(event) {
     //     }
     //   });
   });
-
-
-            
-
-
-
 
 
 
