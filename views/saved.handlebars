@@ -39,7 +39,7 @@
 
 
 
-  <div class="panel panel-default">
+  <div class="panel panel-default" id="Saved-Panel">
     
       <div class="panel-body">
           
@@ -55,20 +55,22 @@
                      <input type="hidden" class="Savedheadline_id" type="text" value={{this.id}}><br>
                      <button type='submit' class="btn btn-default">Delete From Saved Articles</button>
                      </form>
+                     <form class="Note-Form">
+                    <input type="hidden" class="Savedheadlinenote_id" type="text" value={{this.id}}><br>
+                    <button type="submit" id="Note-Button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Add Note</button>
+                    </form>
                                       
                     <div id="myModal" class="modal">
 
                            <!-- Modal content -->
                           <div class="modal-content">
                            {{!-- <span class="close">&times;</span> --}}
-                           <div id="notes"></div>
+                           
                           </div>
 
                     </div>
                   
-                  <form class="Note-Form">
-                  <button type="submit" id="Note-Button" class="btn btn-default">Add Note</button>
-                  </form>
+                  
                   </li>
                    {{/if}}
                  {{/each}}
@@ -78,6 +80,26 @@
               
       </div>
   </div>
+
+
+
+
+<div class="panel panel-default" id="Note-Panel">
+    
+      <div class="panel-body">
+          
+               
+           <div id="notes"></div>   
+                
+              
+      </div>
+  </div>
+
+
+
+
+
+
 
   
 </div>
